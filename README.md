@@ -66,7 +66,7 @@ department, a named group), so match on the institution *and* the description.
 
 | Institution | Installation | Email to join | age key (encrypt to this) |
 |---|---|---|---|
-| Western University | Bioconvergence Centre | _(added when the centre goes live)_ | _(added when the centre goes live)_ |
+| Western University | Nirvana | mhallet@uwo.ca | age1pv48e2a48ph3v34u236278t50hd5dkejxtjf2t0vyvyu3q3h5vespcr44j |
 
 **Don't see your institution?** It may not run wigamig yet — ask your PI or
 lab manager. (Registrars add their row here when they go live.)
