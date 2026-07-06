@@ -66,7 +66,6 @@ department, a named group), so match on the institution *and* the description.
 
 | Institution | Installation | Email to join | age key (encrypt to this) |
 |---|---|---|---|
-| Western University | Western Samadhi | mhallet@uwo.ca | age1eevvdlrp05fk9sd2uvrv7lc7md23lv5wqalmykr6mlq6esqlvszse5gd5y |
 
 **Don't see your institution?** It may not run wigamig yet — ask your PI or
 lab manager. (Registrars add their row here when they go live.)
