@@ -72,7 +72,6 @@ department, a named group), so match on the institution *and* the description.
 
 | Institution | Installation | Email to join | age key (encrypt to this) |
 |---|---|---|---|
-| Western University | Western serenity | michael.hallett@uwo.ca | age13v6s3pd0e6a5zmmackxe8urfwjrhvdetjag8lwrlavu7vejf34xstx52qk |
 | Western University | Western QA Centre | tbrowne5@uwo.ca | age1pa3tqu0xlcm0tqmgr5j63nh50k2xhvxd2yfcxd760dxyhuzat9nqqmexah |
 
 **Don't see your institution?** It may not run wigamig yet — ask your PI or
