@@ -14,6 +14,11 @@ a **PI** registering a new lab or core, or a **mayor** listing a centre.
 
 ## PIs — register a lab or core
 
+You're expected to have already installed murmurent
+([github.com/hallettmiket/murmurent](https://github.com/hallettmiket/murmurent))
+before registering — the join script will offer to install it for you if not,
+but the centre expects your machine to be ready to go once you're approved.
+
 Find your institution in the directory below, then run the join script. It asks a
 few questions, encrypts your request to that centre's key, and opens your email
 app ready to send:
