@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# wigamig-join.sh — the one script a prospective member runs to join a murmurent
+# murmurent-join.sh — the one script a prospective member runs to join a murmurent
 # institution. It:
 #   1. installs `age` (encryption) if you don't have it,
 #   2. asks you a few questions (no file to edit),
@@ -11,8 +11,8 @@
 # read the result.
 #
 #   Download + run:
-#     curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/murmurent_public/main/join/wigamig-join.sh
-#     sh wigamig-join.sh
+#     curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/murmurent_public/main/join/murmurent-join.sh
+#     sh murmurent-join.sh
 set -eu
 
 HUB_RAW="https://raw.githubusercontent.com/hallettmiket/murmurent_public/main"
@@ -202,21 +202,21 @@ offer_install() {
   say "your computer ready so you're set the moment you're added."
   case "$(ask 'Download + install murmurent now? [Y/n] ')" in
     n*|N*) say ""; say "No problem. When you're ready, run:";
-           say "  curl -fsSL -O $HUB_RAW/install-wigamig.sh && sh install-wigamig.sh";
+           say "  curl -fsSL -O $HUB_RAW/install-murmurent.sh && sh install-murmurent.sh";
            return 0 ;;
   esac
   if ! command -v curl >/dev/null 2>&1; then
     say "Need 'curl' to fetch the installer. Install curl, then run:"
-    say "  curl -fsSL -O $HUB_RAW/install-wigamig.sh && sh install-wigamig.sh"
+    say "  curl -fsSL -O $HUB_RAW/install-murmurent.sh && sh install-murmurent.sh"
     return 0
   fi
   INST="$(mktemp)"
-  if curl -fsSL "$HUB_RAW/install-wigamig.sh" -o "$INST" 2>/dev/null; then
+  if curl -fsSL "$HUB_RAW/install-murmurent.sh" -o "$INST" 2>/dev/null; then
     sh "$INST"; rm -f "$INST"
   else
     rm -f "$INST"
     say "Couldn't fetch the installer just now. Try again later with:"
-    say "  curl -fsSL -O $HUB_RAW/install-wigamig.sh && sh install-wigamig.sh"
+    say "  curl -fsSL -O $HUB_RAW/install-murmurent.sh && sh install-murmurent.sh"
   fi
 }
 

@@ -19,8 +19,8 @@ few questions, encrypts your request to that centre's key, and opens your email
 app ready to send:
 
 ```sh
-curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/murmurent_public/main/join/wigamig-join.sh
-sh wigamig-join.sh
+curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/murmurent_public/main/join/murmurent-join.sh
+sh murmurent-join.sh
 ```
 
 Press **Send**. Once the mayor approves, they send you back your **PI ID** to

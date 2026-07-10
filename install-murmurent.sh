@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# install-wigamig.sh — one command that installs the murmurent software on your
+# install-murmurent.sh — one command that installs the murmurent software on your
 # computer. It:
 #   1. checks you have git (and installs 'uv', the Python installer, if needed),
 #   2. downloads the public murmurent code to ~/repos/murmurent,
@@ -9,11 +9,11 @@
 #
 # You do NOT need to be approved for a centre to run this — the code is public.
 # This just gets your machine ready. Joining a lab/core still happens by email
-# (see wigamig-join.sh) and the Mayor's reply.
+# (see murmurent-join.sh) and the Mayor's reply.
 #
 #   Download + run:
-#     curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/murmurent_public/main/install-wigamig.sh
-#     sh install-wigamig.sh
+#     curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/murmurent_public/main/install-murmurent.sh
+#     sh install-murmurent.sh
 set -eu
 
 REPO_URL="https://github.com/hallettmiket/murmurent.git"
