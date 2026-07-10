@@ -2,7 +2,7 @@
 # install-wigamig.sh — one command that installs the murmurent software on your
 # computer. It:
 #   1. checks you have git (and installs 'uv', the Python installer, if needed),
-#   2. downloads the public murmurent code to ~/repos/wigamig,
+#   2. downloads the public murmurent code to ~/repos/murmurent,
 #   3. installs the `murmurent` command,
 #   4. wires the shared agents + rules into ~/.claude/,
 #   5. registers the murmurent hooks + tools.
@@ -12,12 +12,12 @@
 # (see wigamig-join.sh) and the Mayor's reply.
 #
 #   Download + run:
-#     curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/wigamig_public/main/install-wigamig.sh
+#     curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/murmurent_public/main/install-wigamig.sh
 #     sh install-wigamig.sh
 set -eu
 
-REPO_URL="https://github.com/hallettmiket/wigamig.git"
-DEST="$HOME/repos/wigamig"
+REPO_URL="https://github.com/hallettmiket/murmurent.git"
+DEST="$HOME/repos/murmurent"
 
 say() { printf '%s\n' "$*"; }
 ask() { printf '%s' "$1" >&2; IFS= read -r _a || _a=""; printf '%s' "$_a"; }
@@ -76,7 +76,7 @@ get_code() {
 # --- 3. install + wire -----------------------------------------------------
 main() {
   say "This installs the murmurent software on your computer. Nothing is sent"
-  say "anywhere; it only sets up files under ~/repos/wigamig and ~/.claude/."
+  say "anywhere; it only sets up files under ~/repos/murmurent and ~/.claude/."
   say ""
   need_git
   need_uv

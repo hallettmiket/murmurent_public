@@ -11,11 +11,11 @@
 # read the result.
 #
 #   Download + run:
-#     curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/wigamig_public/main/join/wigamig-join.sh
+#     curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/murmurent_public/main/join/wigamig-join.sh
 #     sh wigamig-join.sh
 set -eu
 
-HUB_RAW="https://raw.githubusercontent.com/hallettmiket/wigamig_public/main"
+HUB_RAW="https://raw.githubusercontent.com/hallettmiket/murmurent_public/main"
 
 say()  { printf '%s\n' "$*"; }
 ask()  { # ask "prompt" -> echoes the answer

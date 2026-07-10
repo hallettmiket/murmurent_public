@@ -6,7 +6,7 @@ a **PI** registering a new lab or core, or a **mayor** listing a centre.
 - **A member of a lab that already uses murmurent?** You don't come here — just ask
   your PI for a membership ID (they issue it; you run `murmurent import-card`).
 - **New to murmurent?** Install it first:
-  [github.com/hallettmiket/wigamig](https://github.com/hallettmiket/wigamig).
+  [github.com/hallettmiket/murmurent](https://github.com/hallettmiket/murmurent).
 
 > This repository collects **nothing** — no form, no issues. A join request is
 > **encrypted to your institution's registrar** and emailed to them; only they
@@ -19,7 +19,7 @@ few questions, encrypts your request to that centre's key, and opens your email
 app ready to send:
 
 ```sh
-curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/wigamig_public/main/join/wigamig-join.sh
+curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/murmurent_public/main/join/wigamig-join.sh
 sh wigamig-join.sh
 ```
 
@@ -32,7 +32,7 @@ form.)*
 From your centre, run `murmurent centre-hub-publish` — it writes your directory row
 here plus your signing key + revocation list (so members can verify IDs) and
 prints a `git push` for you to run. See the mayor setup in the
-[code repo](https://github.com/hallettmiket/wigamig).
+[code repo](https://github.com/hallettmiket/murmurent).
 
 ## Institutions using murmurent
 
