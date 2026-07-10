@@ -1,7 +1,7 @@
 # Murmurent Centre directory
 
-This page lists implementations of **Murmurent** at different institutions. 
-You only need this repository if you're a **PI** registering a  lab or core, or a **mayor** 
+This page lists implementations of **Murmurent** at different institutions.
+You only need this repository if you're a **PI** registering a lab or core, or a **mayor**
 listing a centre.
 
 Anyone interested in obtaining Murmurent, install this first:
@@ -12,7 +12,7 @@ Anyone interested in obtaining Murmurent, install this first:
 
 ## PIs — register a lab or core
 
-Find your implementation at the institution in the directory below, then run the join script. 
+Find your institution in the directory below, then run the join script.
 It asks a few questions, encrypts your request to that centre's key, and opens your email
 app ready to send:
 
@@ -21,8 +21,15 @@ curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/murmurent_public/ma
 sh murmurent-join.sh
 ```
 
-Press **Send**. Once the mayor approves, they send you back your **PI ID** to
-import.  ???? 
+Press **Send**. Once the mayor approves, they email you back your signed **PI ID** —
+import it with:
+
+```sh
+murmurent import-card <file> --trust-root <the centre's published signing recipient>
+```
+
+Confirm the trust root's fingerprint with the mayor out-of-band (e.g. on a call) the
+first time — it's what makes the chain of trust actually trustworthy.
 
 ## Mayors — list your centre
 
