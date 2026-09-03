@@ -55,3 +55,17 @@ is the public key the join script encrypts to.
 
 **Don't see your institution?** It may not run murmurent yet — ask your PI or lab
 manager. (Registrars add their row here when they go live.)
+
+## Questions, or something wrong on this page?
+
+This directory is maintained alongside the murmurent code. Two routes, and they
+are different on purpose:
+
+| What you have | Where it goes |
+|---|---|
+| A join request (you want to join an institution) | **Not here.** Encrypted by the join script and emailed to that institution's registrar, using the address and age key in the table above. Nobody else can read it. |
+| A wrong or stale row above, a broken link, a bug in the join script, or a question about murmurent itself | [Open an issue on `murmurent_dev`](https://github.com/hallettmiket/murmurent_dev/issues), or email the maintainer: Mike Hallett, michael.hallett@uwo.ca |
+
+Issues are disabled on this repository so that no member information is ever
+posted publicly. That is why the second route points somewhere else rather than
+at a form here.
