@@ -52,6 +52,7 @@ is the public key the join script encrypts to.
 |---|---|---|---|
 | Western University | Western Test Centre | tbrowne5@uwo.ca | age1y43uxhv7dp50mw8qnrqwh4wvamp7adz4alxezpxang4wn9usuumqmneuat |
 | Western University | Western AI Test Centre | tbrowne5@uwo.ca | age1tghhgvz5p0gnx63d6za9xvmqnklw7hjq3tgl72af4ercvgkjv38qea9swg |
+| Western University | Western QA September 2026 | tbrowne5@uwo.ca | age1tj5hd2a68qeshg9wp8f60fpatecxjzqrtltawkmuasjypfx8xdgqw7pk85 |
 
 **Don't see your institution?** It may not run murmurent yet — ask your PI or lab
 manager. (Registrars add their row here when they go live.)
