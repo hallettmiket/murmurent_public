@@ -1,0 +1,12 @@
+{
+  "payload": {
+    "unique_name": "western_qa_sep2026",
+    "institution": "Western University",
+    "name": "Western QA September 2026",
+    "join_email": "tbrowne5@uwo.ca",
+    "age_pubkey": "age1tj5hd2a68qeshg9wp8f60fpatecxjzqrtltawkmuasjypfx8xdgqw7pk85",
+    "signing_pubkey": "ed25519:l7UFKVq1v43E6AI95LVxkT3CYZEWjMLj/eCByWDCWB4=",
+    "root_fingerprint": "SHA256:mDjeYZ7u4hssaiZ53JGZsHa+ODNoktINlOLtwToDIJg"
+  },
+  "signature": "0+W9KtCQ4BTrSvKOTVPqfH79ELdjgUdjl1ErmDAlSKEdO6c4qmt0uvIvImNDXUsz1DQF6W/AbVh0ao0QD6zaCg=="
+}
