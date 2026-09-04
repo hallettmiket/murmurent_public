@@ -56,6 +56,37 @@ is the public key the join script encrypts to.
 **Don't see your institution?** It may not run murmurent yet — ask your PI or lab
 manager. (Registrars add their row here when they go live.)
 
+## Published choreographies
+
+A **choreography** is one recurring multi-actor workflow: a question several
+people attack, each with their own approach, with the agents they run, the
+order they run in, and the artefacts that come out. Published ones are listed
+in [`choreographies.tsv`](choreographies.tsv), and you install one with
+murmurent itself:
+
+```bash
+murmurent choreography list                  # what is published
+murmurent choreography install inhibition    # or a git URL directly
+```
+
+| Name | What it does | Repository |
+|---|---|---|
+| `inhibition` | *Dance with Inhibition.* Four independent approaches generate candidate covalent and non-covalent Pin1 inhibitors, are judged against one shared control, and are presented side by side for a medicinal chemist to adjudicate. The deliverable is the method, not the molecule. | [tt8804/inhibition_public](https://github.com/tt8804/inhibition_public) |
+
+The table above is a courtesy for people reading this page in a browser. The
+index itself carries **locations only**, and everything `install` shows you is
+read from the choreography's own `.murmurent.yaml`, so no description here can
+drift away from the repository it describes.
+
+**Data is never included.** A choreography repository carries code, decision
+records and documentation. Its data lives under a centre's own governed data
+root, so installing one gives you the method, not the results.
+
+**Publishing yours:** declare `kind: choreography` in a `.murmurent.yaml` at
+your repository root (see `docs/choreography.md` in the
+[code repo](https://github.com/hallettmiket/murmurent)), then open a pull
+request adding one row to `choreographies.tsv`.
+
 ## Questions, or something wrong on this page?
 
 This directory is maintained alongside the murmurent code. Two routes, and they

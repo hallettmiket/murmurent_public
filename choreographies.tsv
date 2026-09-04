@@ -1,0 +1,21 @@
+# murmurent choreography index — machine-readable form, read by
+# `murmurent choreography list` and `murmurent choreography install <name>`.
+#
+# One row per published choreography: name <TAB> git_url
+#
+# LOCATIONS ONLY. This file deliberately carries no titles, summaries or
+# counts. Everything a reader is shown comes from the choreography's own
+# `.murmurent.yaml`, read at install time, so a description here could never
+# drift away from the repository it describes. `name` must match the `name`
+# field in that file, because that is what an install-by-name resolves.
+#
+# Adding a row: the repository must be public, must declare
+# `kind: choreography` in `.murmurent.yaml` at its root, and should carry its
+# decision records and failure catalogue (see docs/choreography.md in the code
+# repo — for a choreography the written substrate is part of the result and
+# ships). Open a PR against this file.
+#
+# Data is never included. A choreography repository carries code, decisions and
+# documentation; its data lives under the centre's own governed data root.
+#
+inhibition	https://github.com/tt8804/inhibition_public.git
